@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="overlay">
+            <div id="modal"></div>
+        </div>
+        <div class="container">
+            <h1 id="message">Player 1 Turn</h1>
+            <div class="players">
+                <div id="player1">
+                    <span id="removePlayerBtn">❌</span>
+                    <h1>P1 Score:
+                        <span id="player1Scoreboard">0</span>
+                    </h1>
+                    <div id="player1Dice" class="dice active"></div>
+                </div>
+                <div id="player2">
+                    <span id="removePlayerBtn">❌</span>
+                    <h1>P2 Score:
+                        <span id="player2Scoreboard">0</span>
+                    </h1>
+                    <div id="player2Dice" class="dice"></div>
+                </div>
+            </div>
+            <button id="rollBtn">Roll Dice 🎲</button>
+            <button id="addPlayerBtn">Add Player ➕</button>
+        </div>
+        <div class="container">
+            <div class="leaderboard">
+                <h2>Leaderboard</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>Player</td>
+                            <td># Wins</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
